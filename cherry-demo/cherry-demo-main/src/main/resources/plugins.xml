@@ -8,8 +8,8 @@
     <property name="threshold" value="100" />
 
     <!--jars-->
-    <lib dir="D:/plugins/lib1" regex="" />
-    <lib dir="D:/plugins/lib2" regex="" />
+    <lib dir="E:/plugins/lib1" regex="" />
+    <lib dir="E:/plugins/lib2" regex="" />
 
     <context-param>
         <param-name>app-version</param-name>

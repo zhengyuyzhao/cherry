@@ -30,8 +30,12 @@ public class PluginClassLoader {
 		this.classLoader = createClassLoader(jarfileDir, parent);
 	}
 
+	public URLClassLoader getClassLoader() {
+		return classLoader;
+	}
+
 	public void addToClassLoader(final String baseDir, final FileFilter filter,
-			boolean quiet) {
+								 boolean quiet) {
 		
 		File base = new File(baseDir);
 		

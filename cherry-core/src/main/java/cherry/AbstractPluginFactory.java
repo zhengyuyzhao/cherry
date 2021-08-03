@@ -121,5 +121,5 @@ public abstract class AbstractPluginFactory implements PluginFactory {
 
     protected abstract Class<?> loadPluginClass(String clazz) throws ClassNotFoundException;
 
-    protected abstract PluginContext getPluginContext();
+    public abstract PluginContext getPluginContext();
 }

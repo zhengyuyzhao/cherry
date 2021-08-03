@@ -23,4 +23,8 @@ public interface PluginFactory {
     boolean hasPlugin(String name);
 
     void close();
+
+    ClassLoader getClassLoader();
+
+    PluginContext getPluginContext();
 }

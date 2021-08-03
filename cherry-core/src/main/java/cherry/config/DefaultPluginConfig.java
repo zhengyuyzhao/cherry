@@ -16,11 +16,18 @@ public class DefaultPluginConfig implements PluginConfig {
     private String pluginName;
     private Map<String, String> params;
     private PluginContext context;
+    private PluginDefinition pd;
 
     public DefaultPluginConfig(PluginDefinition pd, PluginContext context) {
         this.pluginName = pd.getName();
         this.params = getInitParams(pd.getParams());
         this.context = context;
+        this.pd = pd;
+    }
+
+    @Override
+    public PluginDefinition getPluginDefinition() {
+        return pd;
     }
 
     @Override

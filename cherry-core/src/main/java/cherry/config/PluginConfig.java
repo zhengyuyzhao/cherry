@@ -10,6 +10,7 @@ import java.util.Set;
  * @author Ricky Fung
  */
 public interface PluginConfig {
+    PluginDefinition getPluginDefinition();
 
     String getPluginName();
 

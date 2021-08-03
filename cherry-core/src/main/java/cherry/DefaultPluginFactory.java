@@ -1,6 +1,7 @@
 package cherry;
 
 import cherry.config.AppConfig;
+import cherry.config.DefaultPluginConfig;
 import cherry.config.Library;
 import cherry.config.PluginDefinition;
 import cherry.exception.PluginException;
@@ -54,8 +55,13 @@ public class DefaultPluginFactory extends AbstractPluginFactory {
     }
 
     @Override
-    protected PluginContext getPluginContext() {
+    public PluginContext getPluginContext() {
         return this.context;
+    }
+
+    @Override
+    public ClassLoader getClassLoader() {
+        return classLoader.getClassLoader();
     }
 
     @Override

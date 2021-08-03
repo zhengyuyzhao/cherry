@@ -9,7 +9,7 @@ import cherry.config.PluginConfig;
  */
 public interface Plugin {
 
-    void init(PluginConfig config);
+    void init(PluginConfig config) throws ClassNotFoundException, IllegalAccessException, InstantiationException;
 
     void destroy();
 }

@@ -1,24 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
+        <artifactId>cherry-demo</artifactId>
         <groupId>com.mindflow</groupId>
-        <artifactId>cherry</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cherry-demo</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>cherry-demo-plugin2</artifactId>
+    <packaging>jar</packaging>
 
-    <name>cherry-demo</name>
+    <name>cherry-demo-plugin</name>
     <url>http://maven.apache.org</url>
-
-    <modules>
-        <module>cherry-demo-api</module>
-        <module>cherry-demo-plugin</module>
-        <module>cherry-demo-plugin2</module>
-        <module>cherry-demo-main</module>
-    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -27,7 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>com.mindflow</groupId>
-            <artifactId>cherry-core</artifactId>
+            <artifactId>cherry-demo-api</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
